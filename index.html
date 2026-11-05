@@ -2,72 +2,153 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="https://vergenet.net/~conrad/linux/cartoons/images/pee-on-logo2.jpg">
   <title>akettunen</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <style>
     body {
-      background-image: url("https://media.tenor.com/S61VCO73mOAAAAAj/linux-tux.gif");
+      background-color: black;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fw.wallhaven.cc%2Ffull%2Fvq%2Fwallhaven-vqwlwl.jpg&f=1&nofb=1&ipt=5617f01fed9cbd78a4171c53f54a9fd5b083fb80c0be7a9a9aa92accdd68531b&ipo=images");
       background-size: cover;
-      background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
-      background-color: black;
-      font-family: 'Noto Sans', sans-serif;
+      filter: blur(5px);
+      transform: scale(1.05);
     }
-    h1, p, li {
+
+    h1 {
+      font-size: 1.4em;
+      line-height: 1.4;
+    }
+
+    h1, p, li, small {
       color: white;
       text-shadow: 0 0 6px black;
     }
+
     strong {
-      color: royalblue;
+      color: rgb(41, 41, 141);
     }
+
     .grey {
       color: grey;
       font-weight: bold;
     }
+
+    .white-bg {
+      background-color: white;
+    }
+
+    .aqua {
+      color: aqua;
+    }
+
+    .green {
+      color: rgb(60, 141, 75);
+    }
+
+    .green2 {
+      color: rgb(90, 176, 106);
+    }
+
     a {
       color: mediumpurple;
     }
+
     hr {
       border: 1px solid grey;
+    }
+
+    /* Spinning Arch logo */
+    .spin {
+      width: 50px;
+      height: 50px;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .spin {
+        animation: none;
+      }
     }
   </style>
 </head>
 <body>
-
 <h1>Hello im ak (akettunen)</h1>
-<p>This website is just HTML practice &amp; at the same time its like a ABOUT/README.</p>
+<p>This website is a ABOUT/README</p>
 <hr>
 
-<img src="https://logotyp.us/file/discord.svg" width="64" height="64" alt="Discord">
-<img style="background-color: white;" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" width="64" height="64" alt="GitHub">
+<img class="spin" src="https://i.redd.it/w1oj8uddc3671.png" width="64" height="64" alt="Discord">
+<img class="spin white-bg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw5tz6S8FdoD8Wq4Qe3Vka3xgvWumvNjWlh6itZ36muQ&s=10" width="64" height="64" alt="GitHub">
 
 <h1>Socials:</h1>
 <p>
-  <strong>(@akettunen) Discord User Link: </strong>
+  <strong>Discord: </strong>
   <a href="https://discord.com/users/1555173111761215622">https://discord.com/users/1555173111761215622</a>
 </p>
 <p>
-  <span class="grey">GitHub Profile: </span>
+  <span class="grey">GitHub: </span>
   <a href="https://github.com/akettunen">https://github.com/akettunen</a>
 </p>
 
 <p><small>I have other socials too but i dont post anything to them...</small></p>
 <hr>
 
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fc%2Fc3%2FPython-logo-notext.svg%2F3840px-Python-logo-notext.svg.png&f=1&nofb=1&ipt=09986c5eeb3b75f254787470eef6b0d024fbc971f7f3bdd2d17c6409f73b29c8&ipo=images" width="64" height="64" alt="Python">
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fb%2Fb8%2FCachyOS_Logo.svg%2F1280px-CachyOS_Logo.svg.png&f=1&nofb=1&ipt=30c26c05d2620b10100b983fc9e0e2849ce9118979f4a09bd3133343e4359719&ipo=images" width="64" height="64" alt="CachyOS">
-<img src="https://external-content.duckduckgo.com/ip3/omarchy.org.ico" width="64" height="64" alt="Omarchy">
+<img class="spin" src="https://img.itch.zone/aW1hZ2UvMTIzMzU0OC83MTkzMjIzLnBuZw==/347x500/bOhDrd.png" width="64" height="64" alt="Python">
+<img class="spin" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56ddcf59-3cb4-4f3d-851e-91ec86e67871/df9xsqb-7b418213-61e4-4f4e-8026-a34a04c4c0b1.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi81NmRkY2Y1OS0zY2I0LTRmM2QtODUxZS05MWVjODZlNjc4NzEvZGY5eHNxYi03YjQxODIxMy02MWU0LTRmNGUtODAyNi1hMzRhMDRjNGMwYjEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Yun_hM6eEooOj6K-q-dJCBONcpyo9ByOnQYVDZukBhs" width="64" height="64" alt="HTML">
+<img class="spin" src="https://preview.redd.it/ascii-ferris-this-seems-bussin-v0-7qjfsdtejx3a1.png?width=871&amp;format=png&amp;auto=webp&amp;s=487ba41a2db6bbf3542b62e2c899091d32beaeeb" width="80" height="64" alt="Rustacean">
+<img class="spin" src="https://i.imgur.com/nVYarV4.png" width="64" height="64" alt="Tux">
+<img class="spin" src="https://art.pixilart.com/fc52109ca772ea1.png" width="64" height="64" alt="Windows">
 
 <h1>About me:</h1>
 <ul>
-  <li>I mainly code Python &amp; sometimes I try other languages.</li>
+  <li>I mainly code Python, Rust &amp; HTML &amp; sometimes I try other languages.</li>
   <li>For operating systems I use Windows 11, CachyOS &amp; Omarchy.</li>
 </ul>
 <hr>
 
-<h1>Thank you for reading &amp; visiting my profile!</h1>
+<h1>Check out my other website (Systemfetch Cave):</h1>
+<p>
+  <a href="https://akettunen.github.io/systemfetchcave/">https://akettunen.github.io/systemfetchcave/</a>
+</p>
 
+<p>Source code:</p>
+
+<p>
+  <a href="https://github.com/akettunen/systemfetchcave/">https://github.com/akettunen/systemfetchcave/</a>
+</p>
+<hr>
+
+<h1>Source code of this site:</h1>
+
+<p>
+  <a href="https://github.com/akettunen/akettunen.github.io">https://github.com/akettunen/akettunen.github.io</a>
+</p>
+<hr>
+
+<h1>Thank you for reading &amp; visiting my profile!</h1>
+<h1 class="aqua">+ i use arch btw</h1>
+<h1 class="green">(CachyOS)</h1>
+<h1 class="green2">(Omarchy)</h1>
+<img class="spin" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fb%2Fb8%2FCachyOS_Logo.svg%2F1280px-CachyOS_Logo.svg.png&f=1&nofb=1&ipt=5dfaf27257e8ff9c005db9bab24064ef6b04ef690eec56593b3454761b9a2c8c&ipo=images" alt="CachyOS">
+<img class="spin" src="https://external-content.duckduckgo.com/ip3/omarchy.org.ico" alt="Omarchy">
 </body>
 </html>
